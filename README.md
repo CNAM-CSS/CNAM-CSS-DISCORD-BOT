@@ -1,8 +1,6 @@
 # Discord Bot Project
 
-Bienvenue sur le projet du Discord Bot ! Ce bot permet de gérer plusieurs fonctionnalités comme l'auto-modération, un système de points d'expérience (XP), et plus encore.
-
-## Table des Matières
+Bienvenue sur le projet du Bot discord du Cnam de Chalon-sur-Saône
 
 - [prérequis](#prérequis)
 - [Création du Bot sur Discord](#création-du-bot-sur-discord)
