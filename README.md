@@ -3,7 +3,7 @@
 Bienvenue sur le projet du Bot discord du Cnam de Chalon-sur-Saône
 
 - [prérequis](#prérequis)
-- [Création du Bot sur Discord](#création-du-bot-sur-discord)
+- [Création du Bot sur Discord](#création-dun-bot-sur-discord)
 - [Contribuer au projet](#contribuer-au-projet)
 - [Activation d'un environnement virtuel](#activation-dun-environnement-virtuel)
 - [Installation du projet](#installation-du-projet )
