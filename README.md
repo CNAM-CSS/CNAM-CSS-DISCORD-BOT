@@ -1,17 +1,18 @@
 # Discord Bot Project
 
-Bienvenue sur le projet du Bot Discord du Cnam de Chalon-sur-Saône ! Voici le guide complet pour commencer, installer, exécuter et contribuer au bot.
+Bienvenue sur le projet du Bot Discord du Cnam de Chalon-sur-Saône ! Voici le guide complet pour débuter, installer, exécuter et contribuer au bot. Si vous contribuez au bot et qu'une de vos Pull Requests est acceptée, vous obtiendrez le rôle "dev" sur le Discord du CNAM et serez mentionné parmi les contributeurs.
 
 - [Prérequis](#prérequis)
 - [Contribuer au projet](#contribuer-au-projet)
-  - [Forker le projet](#forker-le-projet)
-  - [Créer le fichier `.env`](#créer-le-fichier-env)
-  - [Activer un environnement virtuel](#activer-un-environnement-virtuel)
-  - [Installer les dépendances](#installer-les-dépendances)
-  - [Créer le Bot sur Discord](#créer-le-bot-sur-discord)
-  - [Faire des modifications](#faire-des-modifications)
+  - [Créer le bot sur discord](#1-créer-le-bot-sur-discord)
+  - [Forker le projet](#2-forker-le-projet)
+  - [Créer le fichier `.env`](#3-créer-le-fichier-env)
+  - [Activer un environnement virtuel](#4-activer-un-environnement-virtuel)
+  - [Installer les dépendances](#5-installer-les-dépendances)
+  - [Faire des modifications](#6-faire-des-modifications)
 - [Exécution du Bot](#exécution-du-bot)
-- [Dépannage](#dépannage)
+- [Aide](#aide)
+- [Contributeurs](#contributeurs)
 
 ---
 
@@ -133,10 +134,9 @@ Ton bot est maintenant prêt à agir sur ton serveur ! 🥳
 
 ---
 
-## Dépannage
+## Aide
 
-- **Dépannage** : Si vous rencontrez des problèmes ou avez des questions, rendez-vous sur le [Discord du cnam](https://discord.gg/spMXekm9bq)🙏
+- Si vous rencontrez des problèmes ou avez des questions, rendez-vous sur le [Discord du cnam](https://discord.gg/spMXekm9bq)🙏
 
----
-
-Et voilà, votre bot est prêt à animer votre serveur ! Amusez-vous bien et n'oubliez pas, la programmation est encore plus sympa quand on s'amuse en le faisant. 🚀😄
+## Contributeurs
+[KANTZER jules](https://github.com/diezeJhon) ,[Abdellah Dighab](https://github.com/adwge99)
