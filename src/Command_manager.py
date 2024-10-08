@@ -42,6 +42,8 @@ class Command_manager:
 
             joke = random.choice(jokes)
             await ctx.respond(joke)
+            
+            
         @self.bot.slash_command(name="contributors", description="Affiche la liste des contributeurs du projet.")
         async def contributors(ctx: discord.ApplicationContext):
             """
@@ -55,12 +57,12 @@ class Command_manager:
 
             # Ajouter les contributeurs avec des icônes et des liens
             embed.add_field(
-                name=":sparkles: KANTZER Jules :sparkles:",
-                value="[GitHub](https://github.com/diezeJhon)",
+                name="KANTZER Jules",
+                value="[GitHub](https://github.com/diezeJhon),[twitter](https://x.com/diezejhon)",
                 inline=False
             )
             embed.add_field(
-                name=":zap: Abdellah Dighab :zap:",
+                name="Abdellah Dighab",
                 value="[GitHub](https://github.com/adwge99)",
                 inline=False
             )
