@@ -43,7 +43,6 @@ class Command_manager:
             joke = random.choice(jokes)
             await ctx.respond(joke)
             
-            
         @self.bot.slash_command(name="contributors", description="Affiche la liste des contributeurs du projet.")
         async def contributors(ctx: discord.ApplicationContext):
             """
