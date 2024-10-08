@@ -68,3 +68,20 @@ class Command_manager:
 
             embed.set_footer(text="Merci à tous les contributeurs pour leur soutien !")
             await ctx.respond(embed=embed)
+        
+        @self.bot.slash_command(name="github", description="affiche le lien du github.")
+        async def github(ctx: discord.ApplicationContext):
+            """
+            Commande slash qui affiche le lien du github du projet.
+            """
+            embed = discord.Embed(
+                title=":trophy: Lien du projet GitHub :trophy:",
+                description="Voici le lien du projet GitHub.",
+                color=discord.Color.gold()
+            )
+            embed.add_field(
+                name="GitHub",
+                value="[GitHub](https://github.com/CNAM-CSS/CNAM-CSS-DISCORD-BOT")
+            embed.set_footer(text="c'est un projet open source et collaboratif hésitez pas!")
+            await ctx.respond(embed=embed)
+            
