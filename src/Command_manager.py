@@ -36,7 +36,6 @@ class Command_manager:
                 "Que dit une imprimante dans l'eau ? J'ai papier !",
                 "Je suis allé voir un spectacle de batteries hier soir, c’était frappant.",
                 "Pourquoi les maths sont tristes ? Parce qu'elles ont trop de problèmes.",
-                "Quel est le comble pour un électricien ? De ne pas être au courant."
             ]
 
             joke = random.choice(jokes)
