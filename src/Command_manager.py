@@ -25,18 +25,3 @@ class Command_manager:
             Commande slash qui renvoie 'Salut !' avec le nom de l'utilisateur.
             """
             await ctx.respond(f'Salut {ctx.author.name} !')
-        
-        @self.bot.slash_command(name="dadjoke", description="Renvoie une blague de papa aléatoire.")
-        async def dadjoke(ctx: discord.ApplicationContext):
-            """
-            Commande slash qui renvoie une blague de papa aléatoire.
-            """
-            jokes = [
-                "Pourquoi les plongeurs plongent toujours en arrière et jamais en avant ? Parce que sinon ils tombent dans le bateau.",
-                "Que dit une imprimante dans l'eau ? J'ai papier !",
-                "Je suis allé voir un spectacle de batteries hier soir, c’était frappant.",
-                "Pourquoi les maths sont tristes ? Parce qu'elles ont trop de problèmes.",
-            ]
-
-            joke = random.choice(jokes)
-            await ctx.respond(joke)
