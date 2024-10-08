@@ -57,11 +57,11 @@ class Command_manager:
             # Ajouter les contributeurs avec des icônes et des liens
             embed.add_field(
                 name="KANTZER Jules",
-                value="[GitHub](https://github.com/diezeJhon),[twitter](https://x.com/diezejhon)",
+                value="[GitHub](https://github.com/diezeJhon) [twitter](https://x.com/diezejhon)",
                 inline=False
             )
             embed.add_field(
-                name="Abdellah Dighab",
+                name="DIGHAB Abdellah",
                 value="[GitHub](https://github.com/adwge99)",
                 inline=False
             )
