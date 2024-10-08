@@ -1,5 +1,7 @@
 import discord
+import random
 from discord.ext import commands
+
 
 class Command_manager:
     def __init__(self, bot):
