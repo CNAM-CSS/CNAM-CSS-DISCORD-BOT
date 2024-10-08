@@ -42,3 +42,28 @@ class Command_manager:
 
             joke = random.choice(jokes)
             await ctx.respond(joke)
+        @self.bot.slash_command(name="contributors", description="Affiche la liste des contributeurs du projet.")
+        async def contributors(ctx: discord.ApplicationContext):
+            """
+            Commande slash qui affiche la liste des contributeurs du projet de manière stylée.
+            """
+            embed = discord.Embed(
+                title=":trophy: Contributeurs du projet :trophy:",
+                description="Voici la liste des contributeurs qui ont apporté leur aide au développement du bot.",
+                color=discord.Color.gold()
+            )
+
+            # Ajouter les contributeurs avec des icônes et des liens
+            embed.add_field(
+                name=":sparkles: KANTZER Jules :sparkles:",
+                value="[GitHub](https://github.com/diezeJhon)",
+                inline=False
+            )
+            embed.add_field(
+                name=":zap: Abdellah Dighab :zap:",
+                value="[GitHub](https://github.com/adwge99)",
+                inline=False
+            )
+
+            embed.set_footer(text="Merci à tous les contributeurs pour leur soutien !")
+            await ctx.respond(embed=embed)
