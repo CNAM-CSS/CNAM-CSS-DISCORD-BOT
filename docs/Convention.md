@@ -72,5 +72,4 @@
 ## Règles générales
 - **Longueur des noms** : Les noms doivent être aussi descriptifs que nécessaire, mais éviter d’être trop longs.
 - **Abbréviations** : Éviter les abréviations non évidentes ; privilégier des noms clairs.
-- **Langue** : Utiliser une seule langue dans le projet (français ou anglais).
 
