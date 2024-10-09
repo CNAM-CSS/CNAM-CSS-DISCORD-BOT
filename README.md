@@ -9,7 +9,7 @@ Bienvenue sur le projet du Bot Discord du Cnam de Chalon-sur-Saône ! Voici le g
   - [Créer le fichier `.env`](#3-créer-le-fichier-env)
   - [Activer un environnement virtuel](#4-activer-un-environnement-virtuel)
   - [Installer les dépendances](#5-installer-les-dépendances)
-  - [Exécuter le Bot](#6.-Exécuter-le-bot)
+  - [Exécuter le Bot](#6-exécuter-le-bot)
   - [Faire des modifications](#7-faire-des-modifications)
 - 
 - [Aide](#aide)
@@ -108,7 +108,7 @@ python main.py
 
 2. **Faire vos modifications et tester le bot**
 
-   Faites vos modifications et testez le bot localement pour vous assurer qu'il fonctionne correctement.
+   Faites vos modifications et testez le bot localement pour vous assurer qu'il fonctionne correctement. **ATTENTION suivez bien les conventions de codage. ```docs/Convention.md```**
 
 3. **Committer vos changements**
 
