@@ -81,7 +81,7 @@ class Command_manager:
             )
             embed.add_field(
                 name="GitHub",
-                value="[GitHub](https://github.com/CNAM-CSS/CNAM-CSS-DISCORD-BOT)")
+                value="[cliquez ici](https://github.com/CNAM-CSS/CNAM-CSS-DISCORD-BOT)")
             embed.set_footer(text="c'est un projet open source et collaboratif hésitez pas!")
             await ctx.respond(embed=embed)
             
