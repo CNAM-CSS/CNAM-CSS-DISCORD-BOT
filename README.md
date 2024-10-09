@@ -5,12 +5,13 @@ Bienvenue sur le projet du Bot Discord du Cnam de Chalon-sur-Saône ! Voici le g
 - [Prérequis](#prérequis)
 - [Contribuer au projet](#contribuer-au-projet)
   - [Créer le bot sur discord](#1-créer-le-bot-sur-discord)
-  - [Forker le projet](#2-forker-le-projet)
+  - [Forker et cloner le projet](#2-forker-et-cloner-le-projet)
   - [Créer le fichier `.env`](#3-créer-le-fichier-env)
   - [Activer un environnement virtuel](#4-activer-un-environnement-virtuel)
   - [Installer les dépendances](#5-installer-les-dépendances)
-  - [Faire des modifications](#6-faire-des-modifications)
-- [Exécution du Bot](#exécution-du-bot)
+  - [Exécuter le Bot](#6.-Exécuter-le-bot)
+  - [Faire des modifications](#7-faire-des-modifications)
+- 
 - [Aide](#aide)
 - [Contributeurs](#contributeurs)
 
@@ -34,24 +35,28 @@ Bienvenue sur le projet du Bot Discord du Cnam de Chalon-sur-Saône ! Voici le g
 1. Allez sur le [Discord Developer Portal](https://discord.com/developers/applications) et connectez-vous.
 2. Cliquez sur **New Application** et nommez votre bot.
 3. Dans l'onglet **Bot**, cliquez sur **Add Bot**.
-4. Copiez le **TOKEN** du bot et collez-le dans votre fichier `.env`.
+4. Copiez le **TOKEN** du bot et garder le pour l'étape suivante.
 5. Dans l'onglet **OAuth2**, allez dans **URL Generator** :
     - Cochez `bot` sous **SCOPES**.
     - Cochez les permissions que vous voulez sous **BOT PERMISSIONS**.
     - Copiez l'URL générée et invitez le bot sur votre serveur.
 
 
-### 2. Forker le projet
+### 2. Forker et cloner le projet
 
 **Forkez le dépôt** [CNAM-CSS-DISCORD-BOT](https://github.com/CNAM-CSS/CNAM-CSS-DISCORD-BOT) sur GitHub pour obtenir votre propre copie du projet.
-
-
+voici la commande git pour cloner le repository sur votre ordinateur. exécute la dans ton terminal . Remplace "ton_compte" par ton compte . 
+```
+git clone https://github.com/ton_compte/CNAM-CSS-DISCORD-BOT.git
+```
 ### 3. Créer le fichier `.env`
 
 Vous devez configurer les variables d'environnement, en particulier le token de Discord. Créez un fichier `.env` à la racine du projet avec les informations suivantes :
 ```
 DISCORD_TOKEN=Votre_Token_Discord
 ```
+
+
 
 ### 4. Activer un environnement virtuel
 
@@ -85,7 +90,13 @@ Il est recommandé d'utiliser un environnement virtuel pour isoler les dépendan
 ```sh
 pip install -r requirements.txt
 ```
-### 6. Faire des modifications
+### 6. Exécuter le bot
+Une fois l'installation terminée et les configurations effectuées, vous pouvez lancer le bot avec la commande suivante :
+
+```bash
+python main.py
+```
+### 7. Faire des modifications
 
 1. **Créer une branche pour vos modifications**
 
@@ -118,19 +129,7 @@ pip install -r requirements.txt
 
 5. **Créer une Pull Request**
 
-   Créez une **Pull Request** sur le dépôt principal pour proposer vos modifications. Ajoutez une description claire des changements que vous avez apportés.
-
----
-
-## Exécution du Bot
-
-Une fois l'installation terminée et les configurations effectuées, vous pouvez lancer le bot avec la commande suivante :
-
-```bash
-python main.py
-```
-
-Ton bot est maintenant prêt à agir sur ton serveur ! 🥳
+   Créez une **Pull Request** sur le dépôt principal pour proposer vos modifications. Ajoutez une description claire des changements que vous avez apportés.sous peine de vous voir refuser votre Pull request.
 
 ---
 
