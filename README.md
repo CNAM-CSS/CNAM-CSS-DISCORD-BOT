@@ -36,8 +36,6 @@ Le projet utilise principalement deux bibliothèques Python : **Discord.py** et 
   
 - [**Pycord**](https://docs.pycord.dev/en/stable/) est un fork de Discord.py, qui prend en charge les **slash commands** et les interactions modernes. Elle est plus adaptée aux nouvelles fonctionnalités introduites par Discord et bénéficie d'une maintenance active.
 
-Ces bibliothèques facilitent le développement de bots et l'automatisation d'interactions sur les serveurs Discord.
-
 
 ## Contribuer au projet
 
