@@ -3,6 +3,7 @@
 Bienvenue sur le projet du Bot Discord du Cnam de Chalon-sur-Saône ! Voici le guide complet pour débuter, installer, exécuter et contribuer au bot. Si vous contribuez au bot et qu'une de vos Pull Requests est acceptée, vous obtiendrez le rôle "dev" sur le Discord du CNAM et serez mentionné parmi les contributeurs.
 
 - [Prérequis](#prérequis)
+- [technos](#technos)
 - [Contribuer au projet](#contribuer-au-projet)
   - [Créer le bot sur discord](#1-créer-le-bot-sur-discord)
   - [Forker et cloner le projet](#2-forker-et-cloner-le-projet)
@@ -27,6 +28,16 @@ Bienvenue sur le projet du Bot Discord du Cnam de Chalon-sur-Saône ! Voici le g
 2. **Git** : Installez Git pour cloner ce projet et soumettre des Pull Requests.
 
 ---
+## technos
+
+Le projet utilise principalement deux bibliothèques Python : **Discord.py** et **Pycord**.
+
+- [**Discord.py**](https://discordpy.readthedocs.io/en/stable/) est une bibliothèque conçue pour créer des bots Discord en Python. Elle permet de gérer les événements, les commandes et les permissions au sein des serveurs Discord.
+  
+- [**Pycord**](https://docs.pycord.dev/en/stable/) est un fork de Discord.py, qui prend en charge les **slash commands** et les interactions modernes. Elle est plus adaptée aux nouvelles fonctionnalités introduites par Discord et bénéficie d'une maintenance active.
+
+Ces bibliothèques facilitent le développement de bots et l'automatisation d'interactions sur les serveurs Discord.
+
 
 ## Contribuer au projet
 
