@@ -132,10 +132,21 @@ python main.py
    Créez une **Pull Request** sur le dépôt principal pour proposer vos modifications. Ajoutez une description claire des changements que vous avez apportés.sous peine de vous voir refuser votre Pull request.
 
 ---
+## Fonctionnalités nécessitant des étapes supplémentaires
+### Météo
+Pour pouvoir utiliser /meteo, il faut ajouter la clé d'API de votre compte [openweathermap](https://openweathermap.org/)
+dans votre .env de la manière suivante:
+'''
+METEO_API = VOTRE_CLE_API
+'''
+Contactez [MARTENNE Anatole](https://github.com/AnatMarX) si vous voulez utiliser une clé associée au compte du discord.
 
 ## Aide
+### Problèmes fréquents
+- Si vous rencontrez un problème de TOKEN pour votre application, rendez-vous sur le [Discord Developer Portal](https://discord.com/developers/applications).
+Dans l'onglet 'Bot', choisissez 'Reset Token', puis copiez votre nouveau TOKEN dans votre fichier .env.
 
 - Si vous rencontrez des problèmes ou avez des questions, rendez-vous sur le [Discord du cnam](https://discord.gg/spMXekm9bq)🙏
 
 ## Contributeurs
-[KANTZER jules](https://github.com/diezeJhon) ,[Abdellah Dighab](https://github.com/adwge99)
+[KANTZER jules](https://github.com/diezeJhon) ,[Abdellah Dighab](https://github.com/adwge99), [MARTENNE Anatole](https://github.com/AnatMarX)
