@@ -2,6 +2,7 @@ import discord
 import random
 from discord.ext import commands
 
+import src.tools.api_meteo as api_meteo
 
 class Command_manager:
     def __init__(self, bot):
@@ -43,6 +44,49 @@ class Command_manager:
             joke = random.choice(jokes)
             await ctx.respond(joke)
             
+        @self.bot.slash_command(name="meteo", description="La pluie et le beau temps")
+        async def meteo(ctx: discord.ApplicationContext):
+            """
+            Commande slash qui renvoie les information météorologiques principales de l'Usinerie.
+            """
+            message_titre,message_temperature,message_lever_soleil,message_coucher_soleil,message_humidite,message_visibilite_nuages,message_vent,message_air = api_meteo.generer_message_meteo()
+            embed = discord.Embed(
+                title=message_titre,
+                description=None,
+                color=discord.Colour.from_rgb(193, 0, 42)
+            )
+            embed.add_field(
+                name = 'Température',
+                value = message_temperature,
+                inline = False
+            )
+            embed.add_field(
+                name = 'Lever et coucher de soleil',
+                value = message_lever_soleil+'\n'+message_coucher_soleil,
+                inline = False
+            )
+            embed.add_field(
+                name = 'Humidité',
+                value = message_humidite,
+                inline = False
+            )
+            embed.add_field(
+                name = 'Couverture et visibilité',
+                value = message_visibilite_nuages,
+                inline = False
+            )
+            embed.add_field(
+                name = 'Vent',
+                value = message_vent,
+                inline = False
+            )
+            embed.add_field(
+                name = 'Qualité de l\'air',
+                value = message_air,
+                inline = False
+            )
+            await ctx.respond(embed = embed)
+        
         @self.bot.slash_command(name="contributors", description="Affiche la liste des contributeurs du projet.")
         async def contributors(ctx: discord.ApplicationContext):
             """
@@ -63,6 +107,11 @@ class Command_manager:
             embed.add_field(
                 name="DIGHAB Abdellah",
                 value="[GitHub](https://github.com/adwge99)",
+                inline=False
+            )
+            embed.add_field(
+                name="MARTENNE Anatole",
+                value="[GitHub](https://github.com/AnatMarX) [LinkedIn](https://www.linkedin.com/in/anatolemartenne/)",
                 inline=False
             )
 

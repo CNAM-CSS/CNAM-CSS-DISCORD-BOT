@@ -3,7 +3,6 @@
 Bienvenue sur le projet du Bot Discord du Cnam de Chalon-sur-Saône ! Voici le guide complet pour débuter, installer, exécuter et contribuer au bot. Si vous contribuez au bot et qu'une de vos Pull Requests est acceptée, vous obtiendrez le rôle "dev" sur le Discord du CNAM et serez mentionné parmi les contributeurs.
 
 - [Prérequis](#prérequis)
-- [technos](#technos)
 - [Contribuer au projet](#contribuer-au-projet)
   - [Créer le bot sur discord](#1-créer-le-bot-sur-discord)
   - [Forker et cloner le projet](#2-forker-et-cloner-le-projet)
@@ -28,14 +27,6 @@ Bienvenue sur le projet du Bot Discord du Cnam de Chalon-sur-Saône ! Voici le g
 2. **Git** : Installez Git pour cloner ce projet et soumettre des Pull Requests.
 
 ---
-## technos
-
-Le projet utilise principalement deux bibliothèques Python : **Discord.py** et **Pycord**.
-
-- [**Discord.py**](https://discordpy.readthedocs.io/en/stable/) est une bibliothèque conçue pour créer des bots Discord en Python. Elle permet de gérer les événements, les commandes et les permissions au sein des serveurs Discord.
-  
-- [**Pycord**](https://docs.pycord.dev/en/stable/) est un fork de Discord.py, qui prend en charge les **slash commands** et les interactions modernes. Elle est plus adaptée aux nouvelles fonctionnalités introduites par Discord et bénéficie d'une maintenance active.
-
 
 ## Contribuer au projet
 
@@ -141,10 +132,23 @@ python main.py
    Créez une **Pull Request** sur le dépôt principal pour proposer vos modifications. Ajoutez une description claire des changements que vous avez apportés.sous peine de vous voir refuser votre Pull request.
 
 ---
+## Fonctionnalités nécessitant des étapes supplémentaires
+### Météo
+Pour pouvoir utiliser /meteo, il faut ajouter la clé d'API de votre compte [openweathermap](https://openweathermap.org/)
+dans votre .env de la manière suivante:
+'''
+METEO_API = VOTRE_CLE_API
+'''
+Contactez [MARTENNE Anatole](https://github.com/AnatMarX) si vous voulez utiliser une clé associée au compte du discord.
 
 ## Aide
+### Problèmes fréquents
+- Si vous rencontrez un problème de TOKEN pour votre application, rendez-vous sur le [Discord Developer Portal](https://discord.com/developers/applications).
+Dans l'onglet 'Bot', choisissez 'Reset Token', puis copiez votre nouveau TOKEN dans votre fichier .env.
+
+- Sur le [Discord Developer Portal](https://discord.com/developers/applications) dans l'onglet 'Bot', vérifiez que sous 'Privileged Gateway Intents', la ligne 'Server members intent' soit cochée.
 
 - Si vous rencontrez des problèmes ou avez des questions, rendez-vous sur le [Discord du cnam](https://discord.gg/spMXekm9bq)🙏
 
 ## Contributeurs
-[KANTZER jules](https://github.com/diezeJhon) ,[Abdellah Dighab](https://github.com/adwge99)
+[KANTZER jules](https://github.com/diezeJhon) ,[Abdellah Dighab](https://github.com/adwge99), [MARTENNE Anatole](https://github.com/AnatMarX)
