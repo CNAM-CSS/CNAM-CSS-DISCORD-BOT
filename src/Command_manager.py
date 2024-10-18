@@ -45,7 +45,7 @@ class Command_manager:
             await ctx.respond(joke)
             
         @self.bot.slash_command(name="meteo", description="La pluie et le beau temps")
-        async def dadjoke(ctx: discord.ApplicationContext):
+        async def meteo(ctx: discord.ApplicationContext):
             """
             Commande slash qui renvoie les information météorologiques principales de l'Usinerie.
             """
