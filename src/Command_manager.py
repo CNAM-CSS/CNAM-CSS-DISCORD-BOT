@@ -3,6 +3,7 @@ import random
 from discord.ext import commands
 
 import src.tools.api_meteo as api_meteo
+import yaml
 
 class Command_manager:
     def __init__(self, bot):
@@ -94,26 +95,27 @@ class Command_manager:
             """
             embed = discord.Embed(
                 title=":trophy: Contributeurs du projet :trophy:",
-                description="Voici la liste des contributeurs qui ont apporté leur aide au développement du bot.",
+                description="Voici la liste des contributeurs qui ont apporté leur aide au développement du bot.\n \
+                    Les participants sont rangés par ordre chronologique de leur première contribution.\n*Vous aussi, vous pouvez [contribuer](https://github.com/CNAM-CSS/CNAM-CSS-DISCORD-BOT/blob/main/README.md#contribuer-au-projet) !*",
                 color=discord.Color.gold()
             )
 
             # Ajouter les contributeurs avec des icônes et des liens
-            embed.add_field(
-                name="KANTZER Jules",
-                value="[GitHub](https://github.com/diezeJhon) [twitter](https://x.com/diezejhon)",
-                inline=False
-            )
-            embed.add_field(
-                name="DIGHAB Abdellah",
-                value="[GitHub](https://github.com/adwge99)",
-                inline=False
-            )
-            embed.add_field(
-                name="MARTENNE Anatole",
-                value="[GitHub](https://github.com/AnatMarX) [LinkedIn](https://www.linkedin.com/in/anatolemartenne/)",
-                inline=False
-            )
+            with open('data/credits.yaml', 'r') as file:
+                credits = yaml.safe_load(file)
+
+            for contributor in credits.keys():
+                embed.add_field(
+                    name = contributor,
+                    value = credits[contributor]['Intro'],
+                    inline = False
+                )
+                for contact in credits[contributor]['Contact'].keys():
+                    embed.add_field(
+                        name = contact,
+                        value = f'[Lien]({credits[contributor]['Contact'][contact]})'
+                    )
+                embed.add_field(name="________________________", value=" ", inline=False)
 
             embed.set_footer(text="Merci à tous les contributeurs pour leur soutien !")
             await ctx.respond(embed=embed)
