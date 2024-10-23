@@ -40,6 +40,14 @@ class Command_manager:
                 "Que dit une imprimante dans l'eau ? J'ai papier !",
                 "Je suis allé voir un spectacle de batteries hier soir, c’était frappant.",
                 "Pourquoi les maths sont tristes ? Parce qu'elles ont trop de problèmes.",
+                "Sais-tu pourquoi les bélugas sont en voie d’extinction ? Parce qu’il n’y a pas assez de Belu filles…",
+                "Qu’est-ce qu’un chat demande à la pharmacie ? Est-ce que vous auriez un sirop pour matou ?",
+                "Où se cache Mozart ? Dans le frigo, car Mozzarella…",
+                "Comment appelle-t-on un roux dans un four ? Un roux-ti…",
+                "Tu connais la blague du chauffeur de bus ? Nan ? Moi non plus, j’étais à l’arrière…",
+                "Qu’est-ce qui n’est pas un steak ? Une pastèque…",
+                "Dans la phrase « Le voleur a volé une mamie », où est le sujet ? En pris*n…",
+                "Quelle est la différence entre une échelle et un fusil ? L’échelle sert à monter et le fusil sert à descendre"
             ]
 
             joke = random.choice(jokes)
