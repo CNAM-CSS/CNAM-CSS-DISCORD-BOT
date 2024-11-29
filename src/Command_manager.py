@@ -121,7 +121,7 @@ class Command_manager:
                 for contact in credits[contributor]['Contact'].keys():
                     embed.add_field(
                         name = contact,
-                        value = f'[Lien]({credits[contributor]['Contact'][contact]})'
+                        value = f"[Lien]({credits[contributor]['Contact'][contact]})"
                     )
                 embed.add_field(name="________________________", value=" ", inline=False)
 
