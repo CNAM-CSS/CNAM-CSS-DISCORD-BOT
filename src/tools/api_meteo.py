@@ -142,8 +142,8 @@ def generer_message_meteo():
 
   message_titre = f'Météo de l\'Usinerie: {description_2} {icone_temperature(temp_celsius)}'
   message_temperature = f'🌡️ Réelle : {round(temp_celsius,2)}°C, ressentie : {round(ressenti_celsius,2)}°C, min : {round(temp_min,2)}°C, max : {round(temp_max,2)}°C'
-  message_lever_soleil = f'🌄 Lever : {lever_soleil.strftime('%Hh%M')}'
-  message_coucher_soleil = f'🌇 Coucher : {coucher_soleil.strftime('%Hh%M')}'
+  message_lever_soleil = f"🌄 Lever : {lever_soleil.strftime('%Hh%M')}"
+  message_coucher_soleil = f"🌇 Coucher : {coucher_soleil.strftime('%Hh%M')}"
   message_humidite = f'😶‍🌫️ Humidité : {humidite}%, 🏋️ Pression : {pression}hPa'
   message_visibilite_nuages = f'👀 Visibilité : {visibilite}, ☁️ couverture nuageuse : {nuages}% {icone_nuages(nuages)}'
   message_vent = f'🍃 Vitesse : {round(ms_en_kmh(vent_vitesse),2)}km/h, 🧭 {direction_vent}°{icone_direction_vent(direction_vent)}, avec des 🌪️ rafales à {round(ms_en_kmh(vent_rafale),2)}km/h'
